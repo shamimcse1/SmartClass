@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.codercamp.smartclass.ClassSchedule">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3D7A40"
+        android:id="@+id/classtoolBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="#FFE500"
+        android:elevation="4dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class Routine"
+            android:padding="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:background="@drawable/all_text_style"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:maxLines="1"/>
+
+        <View
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room No : 443"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booked Time : 3:40-4.30 PM "
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:maxLines="1"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dept name : CSE20"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>

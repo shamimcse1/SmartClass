@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="codercamp.smartclass">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Smart Class"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CustomNavigationView"
+        tools:ignore="RtlEnabled"
+        tools:replace="android:label">
+        <activity
+            android:name="com.codercamp.smartclass.AdminActivity"
+            android:exported="true"
+            android:parentActivityName="com.codercamp.smartclass.MainActivity"/>
+        <activity
+            android:name="com.codercamp.smartclass.SingupActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.codercamp.smartclass.SinginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.codercamp.smartclass.MainActivity"
+            android:exported="true"
+            android:parentActivityName="com.codercamp.smartclass.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.codercamp.smartclass.SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.codercamp.smartclass.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.codercamp.smartclass.ContactActivity"
+            android:exported="true"
+            android:parentActivityName="com.codercamp.smartclass.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.codercamp.smartclass.BookingActivity"
+            android:exported="true"
+            android:parentActivityName="com.codercamp.smartclass.AdminActivity"/>
+        <activity
+            android:name="com.codercamp.smartclass.ClassSchedule"
+            android:parentActivityName="com.codercamp.smartclass.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.codercamp.smartclass.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

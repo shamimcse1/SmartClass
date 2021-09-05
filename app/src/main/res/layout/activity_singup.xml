@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codercamp.smartclass.SingupActivity">
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/regImage"
+               android:layout_width="match_parent"
+               android:layout_height="230dp"
+               android:layout_marginTop="20dp"
+               android:scaleType="centerInside"
+               android:src="@drawable/ic_login" />
+
+           <EditText
+               android:id="@+id/UserName"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/regImage"
+               android:layout_marginHorizontal="15dp"
+               android:layout_marginTop="30dp"
+               android:background="@drawable/edit_text_bg"
+               android:drawableLeft="@drawable/ic_baseline_person_24"
+               android:drawablePadding="10dp"
+               android:elevation="5dp"
+               android:hint="User Name"
+               android:imeOptions="actionNext"
+               android:inputType="textPersonName"
+               android:padding="12dp"
+               android:textIsSelectable="true" />
+
+           <EditText
+               android:id="@+id/UserEmail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/UserName"
+               android:layout_marginHorizontal="15dp"
+               android:layout_marginTop="30dp"
+               android:background="@drawable/edit_text_bg"
+               android:drawableLeft="@drawable/ic_email"
+               android:drawablePadding="10dp"
+               android:elevation="5dp"
+               android:hint="Email"
+               android:imeOptions="actionNext"
+               android:inputType="textEmailAddress"
+               android:padding="12dp"
+               android:textIsSelectable="true" />
+
+           <EditText
+               android:id="@+id/UserPhone"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/UserEmail"
+               android:layout_marginHorizontal="15dp"
+               android:layout_marginTop="30dp"
+               android:background="@drawable/edit_text_bg"
+               android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+               android:drawablePadding="10dp"
+               android:elevation="5dp"
+               android:hint="Phone"
+               android:imeOptions="actionNext"
+               android:inputType="phone"
+               android:padding="12dp"
+               android:textIsSelectable="true" />
+
+           <EditText
+               android:id="@+id/UserBatchNo"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/UserPhone"
+               android:layout_marginHorizontal="15dp"
+               android:layout_marginTop="30dp"
+               android:background="@drawable/edit_text_bg"
+               android:drawableLeft="@drawable/ic_baseline_class_24"
+               android:drawablePadding="10dp"
+               android:elevation="5dp"
+               android:hint="Batch No"
+               android:imeOptions="actionNext"
+               android:inputType="text"
+               android:padding="12dp"
+               android:textIsSelectable="true" />
+           <EditText
+               android:id="@+id/UserPassword"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/UserBatchNo"
+               android:layout_marginHorizontal="15dp"
+               android:layout_marginTop="30dp"
+               android:background="@drawable/edit_text_bg"
+               android:drawableLeft="@drawable/keylog"
+               android:drawablePadding="10dp"
+               android:elevation="5dp"
+               android:textIsSelectable="true"
+               android:hint="Password"
+               android:imeOptions="actionDone"
+               android:inputType="textPassword"
+               android:padding="12dp" />
+
+
+           <LinearLayout
+               android:id="@+id/btnLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/UserPassword"
+               android:layout_centerInParent="true"
+               android:orientation="vertical">
+
+
+               <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                   style="@style/Widget.AppCompat.Button.Colored"
+                   android:id="@+id/SingUpBtn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginRight="18dp"
+                   android:layout_marginBottom="10dp"
+                   android:text="Sing Up"
+                   android:layout_gravity="center"
+                   app:finalCornerAngle="50dp"
+                   app:initialCornerAngle="0dp"
+                   android:textColor="@color/black"
+                   android:background="@drawable/review_text_bg"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   app:spinning_bar_color="#FFFFFF"
+                   app:spinning_bar_padding="0dp"
+                   app:spinning_bar_width="3dp" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/btnLayout"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:textSize="18sp"
+                   android:text="Already Have An Account ? "
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/SingInText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:text="Sing In"
+                   android:textSize="18sp"
+                   android:textColor="@color/green"
+                   android:textStyle="bold" />
+
+           </LinearLayout>
+       </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

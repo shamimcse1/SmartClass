@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/drawable/ic_baseline_class_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/drawable/ic_email.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/drawable/review_text_bg.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/activity_admin.xml" value="0.25" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/activity_booking.xml" value="0.25" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/activity_class_schedule.xml" value="0.25" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/activity_contact.xml" value="0.25" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/activity_main.xml" value="0.24615384615384617" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/activity_main1.xml" value="0.24615384615384617" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/activity_singin.xml" value="0.25" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/activity_singup.xml" value="0.25" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/activity_splash.xml" value="0.24615384615384617" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/navigation_header.xml" value="0.25" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/settings_activity.xml" value="0.25" />
+        <entry key="..\:/Users/mdsha/Desktop/SmartClass/app/src/main/res/layout/show_book_time.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

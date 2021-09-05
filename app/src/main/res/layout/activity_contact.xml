@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.codercamp.smartclass.ContactActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3D7A40"
+        android:id="@+id/classtoolBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="#FFE500"
+        android:elevation="4dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name : Android Developer"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_18sdp"
+                android:elevation="@dimen/_5sdp"/>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number : 017XXXXXXX"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_18sdp"
+                android:elevation="@dimen/_5sdp"/>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student ID : 1234567890"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_18sdp"
+                android:elevation="@dimen/_5sdp"/>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email : android@gmail.com"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_18sdp"
+                android:elevation="@dimen/_5sdp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Call Us"
+                android:textColor="@color/white"
+                android:onClick="CallUs"
+                android:background="@drawable/edit_text_bg"/>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

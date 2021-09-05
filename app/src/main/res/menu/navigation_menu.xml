@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item android:id="@+id/navi_android"
+           android:title="Home"
+           android:icon="@drawable/ic_home"
+        />
+
+    <item android:id="@+id/classSchedule"
+        android:title="Class Schedule"
+        android:icon="@drawable/ic_schedule"
+        />
+
+    <item android:id="@+id/booking"
+        android:title="Booking"
+        android:icon="@drawable/ic_booking"
+        />
+    <item android:id="@+id/Contact"
+        android:title="Contact us "
+        android:icon="@drawable/ic_contact"
+        />
+
+    <item android:id="@+id/Setting"
+        android:title="Setting"
+        android:icon="@drawable/ic_settings"
+        />
+
+    <item android:id="@+id/Logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout"
+        />
+
+
+</group>
+
+    <!--<item android:title="@string/social_link"
+
+        >
+
+      <menu>
+          <item android:id="@+id/share"
+              android:title="@string/share_link"
+              android:icon="@drawable/share"
+              />
+
+          <item android:id="@+id/navi_send"
+              android:icon="@drawable/send"
+              android:title="@string/send"/>
+
+          <item android:id="@+id/setting"
+              android:icon="@drawable/setting"
+              android:title="@string/setting"/>
+
+
+          <item android:id="@+id/ofline"
+              android:icon="@drawable/ofline"
+              android:title="@string/ofline"/>
+
+
+          <item android:id="@+id/uplode"
+              android:icon="@drawable/uplode"
+              android:title="@string/uplode"/>
+
+
+
+
+      </menu>
+
+    </item>-->
+</menu>
