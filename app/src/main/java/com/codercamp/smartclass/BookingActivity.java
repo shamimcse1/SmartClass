@@ -85,25 +85,19 @@ public class BookingActivity extends AppCompatActivity {
         BookNow = findViewById(R.id.BookNow);
 
 
-        BookNow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        BookNow.setOnClickListener(v -> {
 
-                RoomNo = roomNo.getText().toString();
-                BatchNo = batchNo.getText().toString();
+            RoomNo = roomNo.getText().toString();
+            BatchNo = batchNo.getText().toString();
 
-
-                if (RoomNo.isEmpty()) {
-                    roomNo.setError("Please Enter Room No");
-                    roomNo.requestFocus();
-                    return;
-                } else if (BatchNo.isEmpty()) {
-                    batchNo.setError("Please Enter Batch No");
-                    batchNo.requestFocus();
-                    return;
-                } else {
-                    UpdateUI();
-                }
+            if (RoomNo.isEmpty()) {
+                roomNo.setError("Please Enter Room No");
+                roomNo.requestFocus();
+            } else if (BatchNo.isEmpty()) {
+                batchNo.setError("Please Enter Batch No");
+                batchNo.requestFocus();
+            } else {
+                UpdateUI();
             }
         });
 
@@ -179,6 +173,7 @@ public class BookingActivity extends AppCompatActivity {
         map.put("batchNo", BatchNo);
         map.put("time", result + "-" + resultEnd);
         String key = reference.push().getKey();
+        assert key != null;
         reference.child(key).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {

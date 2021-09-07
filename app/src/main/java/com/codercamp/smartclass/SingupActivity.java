@@ -57,7 +57,7 @@ public class SingupActivity extends AppCompatActivity {
         email = findViewById(R.id.UserEmail);
         password = findViewById(R.id.UserPassword);
 
-        singUpButton = (CircularProgressButton) findViewById(R.id.SingUpBtn);
+        singUpButton = findViewById(R.id.SingUpBtn);
 
         SingInText = findViewById(R.id.SingInText);
 
