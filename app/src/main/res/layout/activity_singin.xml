@@ -11,26 +11,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ProgressBar
-            android:id="@+id/LogInPrograss"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:visibility="gone"
-            />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
 
-
-
             <ImageView
-                android:layout_marginTop="40dp"
                 android:id="@+id/regImage"
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
+                android:layout_marginTop="40dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_login" />
 
@@ -115,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Already Have An Account ? "
+                    android:text="Don't have an account ? "
                     android:textStyle="bold"
                     android:textSize="18sp"/>
 

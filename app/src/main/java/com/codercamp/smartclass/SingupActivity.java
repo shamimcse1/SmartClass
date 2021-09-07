@@ -30,13 +30,13 @@ import br.com.simplepass.loadingbutton.customViews.CircularProgressButton;
 import codercamp.smartclass.R;
 
 public class SingupActivity extends AppCompatActivity {
-    private EditText username, email, number, batchNo, password;
-    private CircularProgressButton singUpButton;
-    private TextView SingInText;
-    private FirebaseAuth auth;
-    private FirebaseUser user;
-    private DatabaseReference reference;
-    private String UserName, UserEmail, UserNumber, UserBatchNo, UserPassword;
+    public EditText username, email, number, batchNo, password;
+    public CircularProgressButton singUpButton;
+    public TextView SingInText;
+    public FirebaseAuth auth;
+    public FirebaseUser user;
+    public DatabaseReference reference;
+    public String UserName, UserEmail, UserNumber, UserBatchNo, UserPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +46,6 @@ public class SingupActivity extends AppCompatActivity {
         initView();
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
-
         reference = FirebaseDatabase.getInstance().getReference("Users");
     }
 
@@ -87,31 +86,24 @@ public class SingupActivity extends AppCompatActivity {
                 if (UserName.isEmpty()) {
                     username.setError("Please Enter Name");
                     username.requestFocus();
-                    return;
                 } else if (UserEmail.isEmpty()) {
                     email.setError("Please Enter Email");
                     email.requestFocus();
-                    return;
                 } else if (!Patterns.EMAIL_ADDRESS.matcher(UserEmail).matches()) {
                     email.setError("Please Enter Valid Email");
                     email.requestFocus();
-                    return;
                 } else if (UserNumber.isEmpty()) {
                     number.setError("Please Enter Number");
                     number.requestFocus();
-                    return;
                 } else if (UserBatchNo.isEmpty()) {
                     batchNo.setError("Please Enter Batch No");
                     batchNo.requestFocus();
-                    return;
                 } else if (UserPassword.isEmpty()) {
                     password.setError("Please Enter Password");
                     password.requestFocus();
-                    return;
                 } else if (UserPassword.length() < 8) {
                     password.setError("Password Length must be greater then 8 Character");
                     password.requestFocus();
-                    return;
                 } else {
                     CreateUser();
                 }

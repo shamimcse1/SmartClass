@@ -17,8 +17,7 @@
            <ImageView
                android:id="@+id/regImage"
                android:layout_width="match_parent"
-               android:layout_height="230dp"
-               android:layout_marginTop="20dp"
+               android:layout_height="220dp"
                android:scaleType="centerInside"
                android:src="@drawable/ic_login" />
 
@@ -142,6 +141,7 @@
                android:layout_height="wrap_content"
                android:layout_below="@id/btnLayout"
                android:layout_marginTop="10dp"
+               android:layout_marginBottom="@dimen/_15sdp"
                android:gravity="center"
                android:orientation="horizontal">
 
@@ -150,8 +150,8 @@
                    android:layout_height="wrap_content"
                    android:layout_gravity="center"
                    android:gravity="center"
-                   android:textSize="18sp"
                    android:text="Already Have An Account ? "
+                   android:textSize="18sp"
                    android:textStyle="bold" />
 
                <TextView
@@ -161,8 +161,8 @@
                    android:layout_gravity="center"
                    android:gravity="center"
                    android:text="Sing In"
-                   android:textSize="18sp"
                    android:textColor="@color/green"
+                   android:textSize="18sp"
                    android:textStyle="bold" />
 
            </LinearLayout>
