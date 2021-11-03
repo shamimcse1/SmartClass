@@ -190,6 +190,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (menuitem.getItemId() == R.id.booking) {
             Intent in = new Intent(MainActivity.this, AdminActivity.class);
             startActivity(in);
+            finish();
             Animatoo.animateZoom(MainActivity.this);
         } else if (menuitem.getItemId() == R.id.Contact) {
             Intent in = new Intent(MainActivity.this, ContactActivity.class);

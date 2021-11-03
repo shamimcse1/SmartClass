@@ -97,10 +97,15 @@ public class BookingActivity extends AppCompatActivity {
                 batchNo.setError("Please Enter Batch No");
                 batchNo.requestFocus();
             } else {
-                UpdateUI();
+                try {
+                    UpdateUI();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                    Toast.makeText(BookingActivity.this, "Please Your Time ", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
-
 
 
     }
@@ -143,6 +148,7 @@ public class BookingActivity extends AppCompatActivity {
         TimePickerDialog timePickerDialog = new TimePickerDialog(this,
                 new TimePickerDialog.OnTimeSetListener() {
 
+                    @SuppressLint("SetTextI18n")
                     @RequiresApi(api = Build.VERSION_CODES.O)
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
@@ -203,8 +209,8 @@ public class BookingActivity extends AppCompatActivity {
             @Override
             public void onTick(long millisUntilFinished) {
                 tv_hour.setText(String.format("%02d : %02d : %02d",
-                        TimeUnit.MILLISECONDS.toHours(millisUntilFinished)%60,
-                        TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)%60,
+                        TimeUnit.MILLISECONDS.toHours(millisUntilFinished) % 60,
+                        TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished) % 60,
                         TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) % 60));
                 BookNow.setVisibility(View.GONE);
             }
@@ -212,6 +218,16 @@ public class BookingActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 BookNow.setVisibility(View.VISIBLE);
+                try {
+                    String key = reference.push().getKey();
+                    assert key != null;
+                    reference = FirebaseDatabase.getInstance().getReference("BookTime").child(key);
+                    reference.removeValue();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+
+
             }
         }.start();
     }

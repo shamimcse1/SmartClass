@@ -2,6 +2,7 @@ package com.codercamp.smartclass;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
@@ -125,6 +126,7 @@ public class SingupActivity extends AppCompatActivity {
                         } else {
                             singUpButton.stopAnimation();
                             Toast.makeText(SingupActivity.this, "Sing Up Failed" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Log.d("Error", task.getException().getMessage());
                         }
 
                     }
@@ -132,7 +134,9 @@ public class SingupActivity extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Exception e) {
                 singUpButton.stopAnimation();
+                singUpButton.revertAnimation();
                 Toast.makeText(SingupActivity.this, "Error " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.d("Error 2", e.getMessage());
 
             }
         });

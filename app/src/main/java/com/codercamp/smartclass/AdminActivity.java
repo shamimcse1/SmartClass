@@ -16,7 +16,7 @@ public class AdminActivity extends AppCompatActivity {
 
    private EditText passwordEdit;
    private Button Login;
-    private Toolbar toolbar1;
+   private Toolbar toolbar1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
